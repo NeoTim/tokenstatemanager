@@ -14,13 +14,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - added checks on get requests to make sure there is only one query returned
 - possible to create for multi-users or switch direction to handle multiple API tokens
 
-## [0.1.1] - 2020-04-06
+## [0.1.1] - 2020-04-26
+### Changed
+- modified readme.md to better explain the program
+
+### Added
+- image of an example output using curl on internal server
+
+
+## [0.1.0] - 2020-04-06
 ### Changed
 - tokenStore.js changed single connection into pooled connection
 - cleaned up log messages on OutsideSecureServer.js
 - cleaned up comments
 
-## [0.1.0] - 2020-04-05
+## [0.0.1] - 2020-04-05
 ### Added
 - Initial commit of token server
 - Created API to manage stored tokens and refresh tokens
