@@ -1,0 +1,24 @@
+const config = {
+    db: {
+        connectionLimit: 3,
+        host: 'localhost',
+        user: 'user',
+        password: 'pasword',
+        database: 'tokenstoredb',
+        socketPath: '/var/run/mysqld/mysqld.sock',
+        timezone: 'utc'
+    },
+    app: {
+        outsidePort: 3000,
+        insidePort: 3001,
+        auth: "auth_string"
+    },
+    tdameritradeAPI: {
+        accessurl: "https://api.tdameritrade.com/v1/oauth2/token",
+        clientid: "clientid@AMER.OAUTHAP",
+        redirect_uri: 'http://ipfromoutside:3000/',
+        authurl: "https://auth.tdameritrade.com/oauth",
+    }
+}
+
+module.exports = config;
