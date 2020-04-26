@@ -2,7 +2,7 @@
 
 ## Description
 
-Server API that maintains tokens associated to TDAmeritrade - see developer.tdameritrade.com.  It sets ups two servers; one that can be seen from the outside to grab an authorization code from TDAmeritrade and an inside server accessible from localhost to be used anytime you need an updated token.  
+Server API that maintains tokens associated to TDAmeritrade - see [developer.tdameritrade.com](http://developer.tdameritrade.com).  It sets ups two servers; one that can be seen from the outside to grab an authorization code from TDAmeritrade and an inside server accessible from localhost to be used anytime you need an updated token.  
 
 Outside server: shows if the server is running and also provides a link to redirect to approval for code that can be used to exchange for a token.
 
@@ -10,7 +10,7 @@ Inside server: maintains the refresh and authorization token.
 
 ## Usage
 
-Update the code by using the external server and click on the link to take you to TDAmeritrade's authorization.  Point your browser to your redirect URL as registered at developer.tdameritrade.com.  Once code is set than you can use the internal server to grab the latest token.
+Update the code by using the external server and click on the link to take you to TDAmeritrade's authorization.  Point your browser to your redirect URL as registered at [developer.tdameritrade.com](http://developer.tdameritrade.com).  Once code is set than you can use the internal server to grab the latest token.
 
 Whenever you need a valid token to access the TDAmeritrade API:
 ```
