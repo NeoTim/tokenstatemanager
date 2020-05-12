@@ -2,7 +2,7 @@
 
 ## Description
 
-Server API that maintains tokens associated to TDAmeritrade - see [developer.tdameritrade.com](http://developer.tdameritrade.com).  It sets ups two servers; one that can be seen from the outside to grab an authorization code from TDAmeritrade and an inside server accessible from localhost to be used anytime you need an updated token.  
+Server API that maintains tokens associated to TDAmeritrade - see [developer.tdameritrade.com](http://developer.tdameritrade.com).  It sets ups two servers; one that can be seen from the outside to grab an authorization code from TDAmeritrade and an inside server accessible from localhost to be used anytime you need an updated token.  Token activity is persisted/stored in a local mysql -> A bit overkill but its assuming you already have a database running.  If no database, the tokenstore.js file can be refactored to persist elsewhere; localfile, other db, etc.
 
 Outside server: shows if the server is running and also provides a link to redirect to approval for code that can be used to exchange for a token.
 
